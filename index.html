@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kuba Catering</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="social-icons">
-        <img src="images/instagram-icon.svg" alt="instagram" />
-        <img src="images/facebook-icon.svg" alt="facebook" />
+        <a target="_blank" href="https://www.instagram.com/partyboxzaza/">
+          <img src="images/instagram-icon.svg" alt="instagram" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/people/ZAZA-PARTY-BOX/61556728373490/"
+        >
+          <img src="images/facebook-icon.svg" alt="facebook" />
+        </a>
       </div>
       <img src="images/logo.png" alt="logo" id="logo" />
       <h1>CATERING</h1>
@@ -18,7 +26,11 @@
     <main>
       <section id="section1">
         <h2>SEKCJA</h2>
-        <div class="section1-container">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-out"
+          class="section1-container"
+        >
           <div class="left-side">
             <img
               id="burger-img"
@@ -96,7 +108,7 @@
       </section>
 
       <section id="section3">
-        <div class="container">
+        <div data-aos="fade-up" data-aos-easing="ease-out" class="container">
           <h2>OFERTA</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
@@ -165,7 +177,7 @@
         </div>
       </section>
       <section id="section4">
-        <div class="container">
+        <div data-aos="fade-up" data-aos-easing="ease-out" class="container">
           <h2>O nas</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -183,7 +195,11 @@
       </section>
       <section id="section5">
         <div class="container">
-          <div class="left-side">
+          <div
+            data-aos="fade-right"
+            data-aos-easing="ease-out"
+            class="left-side"
+          >
             <h2>Jak działamy?</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -198,36 +214,57 @@
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
-          <div class="right-side">
+          <div
+            data-aos="fade-left"
+            data-aos-easing="ease-out"
+            class="right-side"
+          >
             <form action="">
               <div class="grid-wrapper">
                 <div class="grid-item">
                   <label for="text-input">imie i nazwisko</label> <br />
-                  <input type="text" name="text-input" class="text-input" />
+                  <input
+                    required
+                    type="text"
+                    name="text-input"
+                    class="text-input input"
+                  />
                 </div>
                 <div class="grid-item">
                   <label for="tel-input">numer telefonu</label> <br />
                   <input
+                    required
                     type="tel"
                     name="tel-input"
-                    class="tel-input"
+                    class="tel-input input"
                     placeholder="000 000 000"
                   />
                 </div>
                 <div class="grid-item">
                   <label for="email-input">adres email</label> <br />
-                  <input type="email" name="email-input" class="email-input" />
+                  <input
+                    required
+                    type="email"
+                    name="email-input"
+                    class="email-input input"
+                  />
                 </div>
                 <div class="grid-item">
                   <label for="date-input">data wydarzenia</label> <br />
-                  <input type="date" name="date-input" class="date-input" />
+                  <input
+                    required
+                    type="date"
+                    name="date-input"
+                    class="date-input input"
+                  />
                 </div>
                 <div class="grid-item">
                   <label for="text-input">liczba gości</label> <br />
                   <input
+                    required
                     type="number"
                     name="text-input"
-                    class="text-input"
+                    class="text-input input"
                     placeholder="0"
                   />
                 </div>
@@ -259,11 +296,15 @@
                 </div>
                 <div class="grid-item">
                   <label for="text-input">miejscowość</label> <br />
-                  <input type="text" name="text-input" class="text-input" />
+                  <input
+                    required
+                    type="text"
+                    name="text-input"
+                    class="text-input input"
+                  />
                 </div>
+                <input type="submit" value="Wyślij" />
               </div>
-
-              <input type="submit" value="Wyślij" />
             </form>
           </div>
         </div>
@@ -308,5 +349,10 @@
         <p>Lorem ipsum dolor sit.</p>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

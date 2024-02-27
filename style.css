@@ -59,18 +59,22 @@ footer {
 .social-icons {
   display: flex;
   gap: 10px;
-  width: 40px;
+  width: 100px;
   position: absolute;
   top: 10px;
-  right: 60px;
+  right: 10px;
 }
 
-.social-icons > img {
+.social-icons > a {
+  width: 100px;
+}
+
+.social-icons > a > img {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.social-icons > img:hover {
+.social-icons > a > img:hover {
   transform: scale(1.2);
 }
 
@@ -289,11 +293,70 @@ h3 {
   color: var(--second-font-color);
   background-color: var(--first-bg-color);
   width: 55%;
+  padding: 30px;
+}
+
+.right-side > form {
+  width: 100%;
+  height: 100%;
 }
 
 .right-side > form > .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+/* input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="tel"] { */
+.input,
+select {
+  height: 30px;
+  width: 200px;
+  border: 0;
+  padding: 5px;
+  border-bottom: var(--second-bg-color) 4px solid;
+  transition: 0.2s ease-in-out;
+  font-size: 1.1rem;
+}
+
+.input:focus {
+  color: var(--first-font-color);
+  outline: 0;
+  background-color: var(--second-bg-color);
+}
+
+select {
+  height: 45px;
+  width: 211px;
+  border-radius: 0;
+  border: 0;
+  padding: 5px;
+  background-color: #fff;
+  border-bottom: var(--second-bg-color) 4px solid;
+}
+
+input[type="submit"] {
+  width: 150px;
+  height: 40px;
+  grid-column: span 2;
+  background-color: var(--second-bg-color);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  color: var(--first-bg-color);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  font-weight: 800;
 }
 
 /* section6 */
