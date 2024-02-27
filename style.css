@@ -315,8 +315,7 @@ input[type="email"],
 input[type="number"],
 input[type="date"],
 input[type="tel"] { */
-.input,
-select {
+.input {
   height: 30px;
   width: 200px;
   border: 0;
@@ -333,6 +332,7 @@ select {
 }
 
 select {
+  font-size: 1.1rem;
   height: 45px;
   width: 211px;
   border-radius: 0;
