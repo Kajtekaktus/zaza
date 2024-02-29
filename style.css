@@ -34,6 +34,7 @@ input[type="number"] {
 * {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -118,10 +119,11 @@ h3 {
 }
 
 .section1-container {
-  /* padding: 30px; */
-  max-width: 700px;
+  padding: 30px;
+  /* max-width: 700px; */
+
   background-color: var(--first-bg-color);
-  color: var(--second-font-color);
+  /* color: var(--second-font-color); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,7 +133,6 @@ h3 {
 .section1-container .left-side,
 .section1-container .right-side {
   width: 50%;
-  height: 300px;
   display: grid;
   place-items: center;
 }
@@ -146,8 +147,11 @@ h3 {
   width: 50%;
 }
 
-#burger-img {
-  width: 300px;
+#catering-img {
+  width: 400px;
+}
+#catering-info-img {
+  width: 400px;
 }
 
 /* section2 */
@@ -437,4 +441,39 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(2) > p {
 }
 footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
   color: var(--first-font-color);
+}
+
+/* card flip */
+
+.img-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: fadedown 0.3s ease-in-out both;
+}
+
+.img-box:hover .card-back {
+  animation: fadeup 0.3s ease-in-out both;
+}
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadedown {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
 }
