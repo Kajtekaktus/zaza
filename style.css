@@ -37,9 +37,20 @@ input[type="number"] {
   overflow-x: hidden;
 }
 
-body {
-  background-image: url("images/bg.webp");
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1000vh;
+  z-index: -10;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
   background-attachment: fixed;
+}
+
+body {
+  /* background-color: var(--second-bg-color); */
   color: var(--first-font-color);
   /* font-family: "Lato", sans-serif; */
   font-family: quicksand;
@@ -50,6 +61,7 @@ body {
 
 header {
   padding: 100px 0 50px 0;
+  /* color: var(--second-bg-color); */
 }
 
 section,
@@ -81,7 +93,7 @@ footer {
 
 header {
   position: relative;
-  background-image: url("images/bg.webp");
+  /* background-image: url("images/bg.webp"); */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -157,7 +169,7 @@ h3 {
 /* section2 */
 
 #section2 {
-  background-image: url("images/bg.webp");
+  /* background-image: url("images/bg.webp"); */
   background-attachment: fixed;
   color: var(--second-font-color);
   display: flex;
