@@ -72,22 +72,22 @@ footer {
 .social-icons {
   display: flex;
   gap: 10px;
-  width: 100px;
+  padding: 10px;
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
 .social-icons > a {
-  width: 100px;
+  width: 50px;
 }
 
-.social-icons > a > img {
+.social-icons > a {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.social-icons > a > img:hover {
+.social-icons > a:hover {
   transform: scale(1.2);
 }
 
@@ -380,10 +380,10 @@ input[type="submit"] {
   color: var(--first-bg-color);
   cursor: pointer;
 }
-
+/* 
 input[type="submit"]:hover {
   font-weight: 800;
-}
+} */
 
 /* section6 */
 
@@ -512,4 +512,22 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
 
 .hidden {
   display: none;
+}
+
+/* responsive */
+@media only screen and (width <= 900px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-back {
+    animation: none;
+    opacity: 0.8;
+  }
+  .section1-container {
+    display: block;
+  }
+  .section1-container .left-side,
+  .section1-container .right-side {
+    width: 100%;
+  }
 }
