@@ -57,6 +57,17 @@ footer * {
   overflow-y: hidden;
 }
 
+h1,
+h2 {
+  font-size: 4rem;
+  font-family: chloe;
+}
+
+h3 {
+  font-family: chloe;
+  font-size: 2.5rem;
+}
+
 body {
   color: var(--first-font-color);
   font-family: quicksand;
@@ -123,17 +134,6 @@ header {
   width: 350px;
   height: 400px;
   background-color: var(--first-font-color);
-}
-
-h1,
-h2 {
-  font-size: 4rem;
-  font-family: chloe;
-}
-
-h3 {
-  font-family: chloe;
-  font-size: 2.5rem;
 }
 
 /* section1 */
@@ -529,5 +529,23 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
   .section1-container .left-side,
   .section1-container .right-side {
     width: 100%;
+  }
+}
+
+@media only screen and (width <= 460px) {
+  h1,
+  h2 {
+    font-size: 3rem;
+    font-family: chloe;
+  }
+  #catering-img {
+    width: 300px;
+  }
+
+  #catering-info-img {
+    width: 300px;
+  }
+  .item img {
+    width: 300px;
   }
 }
