@@ -43,7 +43,7 @@ input[type="number"] {
   width: 100vw;
   height: 1000vh;
   z-index: -10;
-  background-image: url("images/bg.jpg");
+  background-image: url("images/bg-3.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -442,8 +442,9 @@ footer
   > .container
   > .flex-wrapper
   > .flex-item:nth-of-type(3)
-  > .social-container {
+  > .footer-social-container {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -451,9 +452,9 @@ footer
   > .container
   > .flex-wrapper
   > .flex-item:nth-of-type(3)
-  > .social-container
+  > .footer-social-container
   > img {
-  width: 80px;
+  height: 80px;
 }
 
 footer > .container > .flex-wrapper > .flex-item > img {
@@ -531,18 +532,15 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
     width: 100%;
   }
 
-  
-
-
   #section5 > .container {
     display: block;
     width: 100vw;
   }
-  
+
   #section5 > .container > .left-side {
     width: 100%;
   }
-  
+
   #section5 > .container > .right-side {
     width: 100vw;
     padding: 30px 0;
@@ -555,27 +553,28 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
     justify-content: center;
     row-gap: 20px;
   }
-  .right-side > form > .grid-wrapper > .grid-item{
+  .right-side > form > .grid-wrapper > .grid-item {
     width: 80%;
   }
   .right-side > form > .grid-wrapper > .grid-item .input,
-  .right-side > form > .grid-wrapper > .grid-item select{
+  .right-side > form > .grid-wrapper > .grid-item select {
     width: 100%;
   }
 
+  footer > .container > .flex-wrapper {
+    flex-direction: column;
+  }
   footer > .container > .flex-wrapper > .flex-item {
     padding: 0;
     text-wrap: wrap;
+    width: 100%;
+    aspect-ratio: 4/1;
+    padding: 20px 0;
   }
 
-  footer > .container > .flex-wrapper > .flex-item img {
-    width: 50px;
+  .bg {
+    background-image: url("images/bg-phone.jpg");
   }
-
-  .footer-social-container > img{
-    width: 50px;
-  }
-  
 }
 
 @media only screen and (width <= 460px) {
@@ -604,13 +603,11 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
     border-radius: 10px;
   }
 
-  
-
-  
-  
-
-
-
-
-
+  footer > .container > .flex-wrapper > .flex-item {
+    padding: 0;
+    text-wrap: wrap;
+    width: 100%;
+    aspect-ratio: 2/1;
+    padding: 20px 0;
+  }
 }
