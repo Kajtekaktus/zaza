@@ -302,7 +302,7 @@ header {
 #section5 > .container {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  max-width: 1000px;
 }
 
 #section5 > .container > .left-side {
@@ -530,6 +530,52 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
   .section1-container .right-side {
     width: 100%;
   }
+
+  
+
+
+  #section5 > .container {
+    display: block;
+    width: 100vw;
+  }
+  
+  #section5 > .container > .left-side {
+    width: 100%;
+  }
+  
+  #section5 > .container > .right-side {
+    width: 100vw;
+    padding: 30px 0;
+  }
+
+  .right-side > form > .grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .right-side > form > .grid-wrapper > .grid-item{
+    width: 80%;
+  }
+  .right-side > form > .grid-wrapper > .grid-item .input,
+  .right-side > form > .grid-wrapper > .grid-item select{
+    width: 100%;
+  }
+
+  footer > .container > .flex-wrapper > .flex-item {
+    padding: 0;
+    text-wrap: wrap;
+  }
+
+  footer > .container > .flex-wrapper > .flex-item img {
+    width: 50px;
+  }
+
+  .footer-social-container > img{
+    width: 50px;
+  }
+  
 }
 
 @media only screen and (width <= 460px) {
@@ -548,4 +594,23 @@ footer > .container > .flex-wrapper > .flex-item:nth-of-type(3) > p {
   .item img {
     width: 300px;
   }
+  #section2 > .container {
+    background-color: transparent;
+  }
+  #section2 > .container > h2,
+  #section2 > .container > p {
+    background-color: var(--first-bg-color-opacity);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  
+
+  
+  
+
+
+
+
+
 }
