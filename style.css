@@ -1,11 +1,11 @@
 @font-face {
   font-family: chloe;
-  src: url(/fonts/Chloe-Regular.otf);
+  src: url("/fonts/Chloe-Regular.otf");
 }
 
 @font-face {
   font-family: quicksand;
-  src: url(/fonts/Quicksand-Regular.ttf);
+  src: url("/fonts/Quicksand-Regular.ttf");
 }
 
 :root {
