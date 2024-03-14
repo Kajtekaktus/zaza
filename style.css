@@ -68,6 +68,10 @@ h3 {
   font-size: 2.5rem;
 }
 
+p{
+  font-weight: 600;
+}
+
 body {
   color: var(--first-font-color);
   font-family: quicksand;
