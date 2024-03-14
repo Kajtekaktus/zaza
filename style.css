@@ -1,6 +1,8 @@
 @font-face {
   font-family: chloe;
   src: url("../fonts/Chloe-Regular.otf"), format("otf");
+  src: url("../fonts/chloe-regular.woff"), format("woff");
+  src: url("../fonts/chloe-regular.woff2"), format("woff2");
 }
 
 @font-face {
