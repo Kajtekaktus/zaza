@@ -1,15 +1,15 @@
 @font-face {
   font-family: chloe;
-  src: url("/fonts/Chloe-Regular.otf") format("otf"),
-    url("/fonts/chloe-regular.woff") format("woff"),
-    url("/fonts/chloe-regular.woff2"), format("woff2");
+  src: url("../zaza/fonts/Chloe-Regular.otf") format("otf"),
+    url("../zaza/fonts/chloe-regular.woff") format("woff"),
+    url("../zaza/fonts/chloe-regular.woff2"), format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: quicksand;
-  src: url("/fonts/Quicksand-Regular.ttf"), format("truetype");
+  src: url("../zaza/fonts/Quicksand-Regular.ttf"), format("truetype");
 }
 
 :root {
