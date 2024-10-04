@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Chloe";
+  src:
+    url("../public/fonts/Chloe-Regular.otf") format("otf"),
+    url("../public/fonts/chloe-regular.woff") format("woff"),
+    url("../public/fonts/chloe-regular.woff2") format("woff2");
+  /*font-weight: normal;*/
+  /*font-style: normal;*/
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../public/fonts/Quicksand-Regular.ttf") format("truetype");
+  /*font-weight: normal;*/
+  /*font-style: normal;*/
+}

@@ -1,0 +1,56 @@
+#menu {
+  padding: 32px;
+  margin-inline: 32px;
+
+  background-color: var(--bg-primary-opacity);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  color: var(--text-secondary);
+}
+
+#menu__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#menu__grid > .card {
+  width: 400px;
+
+  position: relative;
+}
+
+#menu__grid > .card > img {
+  width: 100%;
+}
+
+#menu__grid > .card > .card__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 100%;
+  transition: 300ms;
+}
+
+#menu__grid > .card:hover > .card__front {
+  opacity: 10%;
+}
+
+#menu__grid > .card > h3 {
+  margin: 10px 0;
+}
+
+#menu__grid > .card > h4 {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+#menu__grid > .card > p {
+  margin-top: 5px;
+}

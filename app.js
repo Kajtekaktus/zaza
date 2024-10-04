@@ -1,19 +1,20 @@
+const menuGrid = document.getElementById("menu__grid");
 
-// const arrows = document.getElementById("arrows-img");
-// const body = document.querySelector("body");
+console.log(menuGrid);
 
-// window.addEventListener("scroll", () => {
-//   console.log(window.scrollY);
-//   if (window.scrollY > 100) {
-//     // setTimeout(() => {
-//     arrows.classList.add("hidden");
-//     // }, 1000);
-//   } else {
-//     arrows.classList.remove("hidden");
-//   }
-// });
+new Array(8).fill(null).forEach((_, i) => {
+  const card = document.createElement("div");
+  card.className = "card";
 
-// arrows.addEventListener("click", function () {
-//   console.log("dzakdas");
-//   arrows.scrollIntoView({ behavior: "smooth" });
-// });
+  const cardFront = document.createElement("img");
+  cardFront.className = "card__front";
+  cardFront.src = `images/oferta${i + 1}.png`;
+
+  const cardBack = document.createElement("img");
+  cardBack.className = "card__back";
+  cardBack.src = `images/${i + 1}.png`;
+
+  card.appendChild(cardFront);
+  card.appendChild(cardBack);
+  menuGrid.appendChild(card);
+});

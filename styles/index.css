@@ -1,0 +1,76 @@
+@import "fonts.css";
+@import "header.css";
+@import "footer.css";
+@import "about.css";
+@import "contact.css";
+@import "footer.css";
+@import "boxes.css";
+@import "form.css";
+@import "responsive.css";
+@import "for-companies.css";
+
+:root {
+  --text-primary: #fbf3e4;
+  --text-secondary: #765c4b;
+
+  --bg-primary: var(--text-primary);
+  --bg-secondary: var(--text-secondary);
+  --bg-primary-opacity: #fbf3e4dc;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+
+  /*overflow-x: hidden;*/
+
+  background-image: url("../images/bg-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+
+  font-family: "Quicksand";
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Chloe";
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
