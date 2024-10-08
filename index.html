@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Kuba Catering</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <div class="bg"></div>
     <header>
-      <div class="social-icons">
+      <div id="social-icons">
         <a target="_blank" href="https://www.instagram.com/partyboxzaza/">
           <img src="images/instagram-icon.svg" alt="instagram" />
         </a>
@@ -21,381 +21,182 @@
           <img src="images/facebook-icon.svg" alt="facebook" />
         </a>
       </div>
-      <img src="images/logo.png" alt="logo" id="logo" />
-      <!-- <h1>CATERING</h1> -->
+
+      <img id="logo" src="images/logo.png" alt="logo" />
     </header>
-    <main>
-      <section id="section1" data-aos="fade-up" data-aos-offset="300">
-        <h2>DLA FIRM</h2>
-        <div
-          data-aos="fade-up"
-          data-aos-easing="ease-out"
-          class="section1-container"
-        >
-          <div class="left-side">
-            <img
-              src="images/catering-img.png"
-              alt="catering"
-              id="catering-img"
-            />
-          </div>
-          <div class="right-side">
-            <img
-              src="images/catering.png"
-              alt="catering"
-              id="catering-info-img"
-            />
-          </div>
-        </div>
-      </section>
 
-      <section id="section2">
-        <div class="container">
-          <h2>BOXY</h2>
-          <p>32x32 cm, dla 3/4 osob</p>
-          <div class="grid-container">
-            <div class="item">
-              <!-- <h3>TARTINKI BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta1.png" alt="Food 1" />
-                <img class="card-back" src="images/1.png" alt="oferta" />
-              </div>
-              <!-- <h4>TARTINKI BOX</h4> -->
-              <!-- <p>24 kanapeczki / 4 rodzaje</p> -->
-            </div>
-            <div class="item">
-              <!-- <h3>DIPPING BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta2.png" alt="Food 1" />
-                <img class="card-back" src="images/2.png" alt="oferta" />
-              </div>
-              <!-- <h4>DIPPING BOX</h4> -->
-              <!-- <p>mix słupków ze świeżych warzyw</p> -->
-            </div>
-            <div class="item">
-              <!-- <h3>BURGER BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta3.png" alt="Food 1" />
-                <img class="card-back" src="images/3.png" alt="oferta" />
-              </div>
-              <!-- <h4>BURGER BOX</h4> -->
-              <!-- <p>19 mini burgerków</p> -->
-            </div>
-            <div class="item">
-              <!-- <h3>ZAZA BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta4.png" alt="Food 1" />
-                <img class="card-back" src="images/4.png" alt="oferta" />
-              </div>
-              <!-- <h4>ZAZA BOX</h4> -->
-              <!-- <p>Opis dania 4</p> -->
-            </div>
-            <div class="item">
-              <!-- <h3>CALIFORNIA BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta5.png" alt="Food 1" />
-                <img class="card-back" src="images/5.png" alt="oferta" />
-              </div>
-              <!-- <h4>CALIFORNIA BOX</h4> -->
-              <!-- <p>Opis dania 5</p> -->
-            </div>
-            <div class="item">
-              <!-- <h3>PIZZA BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta6.png" alt="Food 1" />
-                <img class="card-back" src="images/6.png" alt="oferta" />
-              </div>
-              <!-- <h4>PIZZA BOX</h4> -->
-              <!-- <p>Opis dania 6</p> -->
-            </div>
-            <div class="item">
-              <!-- <h3>KLASYCZNY BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta7.png" alt="Food 1" />
-                <img class="card-back" src="images/7.png" alt="oferta" />
-              </div>
-              <!-- <h4>KLASYCZNY BOX</h4> -->
-              <!-- <p>Opis dania 7</p> -->
-            </div>
-            <div class="item">
-              <!-- <h3>KLASYCZNY BOX</h3> -->
-              <div class="img-box">
-                <img class="card-front" src="images/oferta8.png" alt="Food 1" />
-                <img class="card-back" src="images/8.png" alt="oferta" />
-              </div>
-              <!-- <h4>KLASYCZNY BOX</h4> -->
-              <!-- <p>Opis dania 8</p> -->
-            </div>
-          </div>
-        </div>
-      </section>
+    <section id="for-companies">
+      <h1>DLA FIRM</h1>
+      <div>
+        <!-- <div id="for-companies__left"> -->
+        <img src="images/catering-img.png" alt="catering" />
+        <!-- </div> -->
+        <!-- <div id="for-companies__right"> -->
+        <img src="images/catering.png" alt="catering" />
+        <!-- </div> -->
+      </div>
+    </section>
 
-      <!-- <section id="section3">
-        <div data-aos="fade-up" data-aos-easing="ease-out" class="container">
-          <h2>OFERTA</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
-            cumque illo. Nulla exercitationem quod maiores.
-          </p>
-          <div class="flex-wrapper">
-            <div class="flex-container">
-              <h3>ZUPY</h3>
-              <div class="flex-item">
-                <div class="left-side">
-                  <p>ZUPA GRZYBOWA</p>
-                </div>
-                <div class="right-side">
-                  <p>ilosc</p>
-                  <p>cena</p>
-                </div>
-              </div>
-              <div class="flex-item">
-                <div class="left-side">
-                  <p>ZUPA GRZYBOWA</p>
-                </div>
-                <div class="right-side">
-                  <p>ilosc</p>
-                  <p>cena</p>
-                </div>
-              </div>
-              <div class="flex-item">
-                <div class="left-side">
-                  <p>ZUPA GRZYBOWA</p>
-                </div>
-                <div class="right-side">
-                  <p>ilosc</p>
-                  <p>cena</p>
-                </div>
-              </div>
-              <div class="flex-item">
-                <div class="left-side">
-                  <p>ZUPA GRZYBOWA</p>
-                </div>
-                <div class="right-side">
-                  <p>ilosc</p>
-                  <p>cena</p>
-                </div>
-              </div>
-              <h3>DANIA CIEPLE</h3>
-              <div class="flex-item">
-                <div class="left-side">
-                  <p>ZUPA GRZYBOWA</p>
-                </div>
-                <div class="right-side">
-                  <p>ilosc</p>
-                  <p>cena</p>
-                </div>
-              </div>
-              <div class="flex-item">
-                <div class="left-side">
-                  <p>ZUPA GRZYBOWA</p>
-                </div>
-                <div class="right-side">
-                  <p>ilosc</p>
-                  <p>cena</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <section id="section4">
-        <div data-aos="fade-up" data-aos-easing="ease-out" class="container">
-          <h2>O nas</h2>
-          <p>
-            Jesteśmy firmą specjalizującą się w tworzeniu wyjątkowych boxów z
-            przekąskami, które doskonale sprawdzą się na różnego rodzaju
-            imprezach. Nasza zróżnicowana oferta obejmuje mini burgery, tacosy,
-            mini pizze, shish kebab, tartinki, wyselekcjonowane wędliny i sery,
-            świeże warzywa i owoce czy croissanty zarówno wytrawne, jak i
-            słodkie. Dostępne w różnych rozmiarach, nasze boxy pozwalają
-            dostosować się do potrzeb każdej imprezy.
-          </p>
+    <section id="menu">
+      <h1>BOXY</h1>
+      <p>32x32 cm, dla 3/4 osob</p>
+      <div id="menu__grid">
+        <!-- JS GENERATED -->
+      </div>
+    </section>
 
-          <p>
-            Możemy także personalizować zawartość boxów, aby idealnie
-            odpowiadała gustom naszych klientów. Nasze najpopularniejsze
-            przekąski to mini burgery oraz antipasti. Wyróżniamy się najniższymi
-            cenami przy jednoczesnym zachowaniu najwyższej jakości składników.
-            Zamówienia można składać poprzez wiadomości na IG, FB i telefon.
-          </p>
+    <section id="about">
+      <h2>O nas</h2>
+      <p>
+        Jesteśmy firmą specjalizującą się w tworzeniu wyjątkowych boxów z
+        przekąskami, które doskonale sprawdzą się na różnego rodzaju imprezach.
+        Nasza zróżnicowana oferta obejmuje mini burgery, tacosy, mini pizze,
+        shish kebab, tartinki, wyselekcjonowane wędliny i sery, świeże warzywa i
+        owoce czy croissanty zarówno wytrawne, jak i słodkie. Dostępne w różnych
+        rozmiarach, nasze boxy pozwalają dostosować się do potrzeb każdej
+        imprezy.
+      </p>
+
+      <p>
+        Możemy także personalizować zawartość boxów, aby idealnie odpowiadała
+        gustom naszych klientów. Nasze najpopularniejsze przekąski to mini
+        burgery oraz antipasti. Wyróżniamy się najniższymi cenami przy
+        jednoczesnym zachowaniu najwyższej jakości składników. Zamówienia można
+        składać poprzez wiadomości na IG, FB i telefon.
+      </p>
+    </section>
+
+    <section id="form">
+      <div id="form__description">
+        <h2>Jak działamy?</h2>
+        <p>
+          Wypełnij formularz, a my się z Tobą skontaktujemy. Podamy Ci
+          propozycję oferty i razem stworzymy idealny zestaw przekąsek na Twój
+          event! Pamiętaj, aby złożyć zamówienie minimum 3 dni przed
+          wydarzeniem. Jeśli potrzebujesz catering na ostatnią chwilę, nie wahaj
+          się z nami skontaktować, zrobimy wszystko co w naszej mocy żeby Ci
+          pomóc. Dzwoń lub pisz, będzie Nam bardzo miło przygotować nasze
+          pyszności specjalnie dla Ciebie!
+        </p>
+        <p>
+          Jeśli potrzebujesz catering na ostatnią chwilę, nie wahaj się z nami
+          skontaktować, zrobimy wszystko co w naszej mocy żeby Ci pomóc. Dzwoń
+          lub pisz, będzie Nam bardzo miło przygotować nasze pyszności
+          specjalnie dla Ciebie!
+        </p>
+      </div>
+
+      <form action="" method="POST">
+        <div class="grid-item">
+          <label for="text-input">imie i nazwisko</label>
+          <input
+            required
+            type="text"
+            name="text-input"
+            class="text-input input"
+            id="text-input"
+          />
         </div>
-      </section>
-      <section id="section5">
-        <div class="container">
-          <div
-            data-aos="fade-right"
-            data-aos-easing="ease-out"
-            class="left-side"
-          >
-            <h2>Jak działamy?</h2>
-            <p>
-              Wypełnij formularz, a my się z Tobą skontaktujemy. Podamy Ci
-              propozycję oferty i razem stworzymy idealny zestaw przekąsek na
-              Twój event! Pamiętaj, aby złożyć zamówienie minimum 3 dni przed
-              wydarzeniem. Jeśli potrzebujesz catering na ostatnią chwilę, nie
-              wahaj się z nami skontaktować, zrobimy wszystko co w naszej mocy
-              żeby Ci pomóc. Dzwoń lub pisz, będzie Nam bardzo miło przygotować
-              nasze pyszności specjalnie dla Ciebie!
-            </p>
-            <p>
-              Jeśli potrzebujesz catering na ostatnią chwilę, nie wahaj się z
-              nami skontaktować, zrobimy wszystko co w naszej mocy żeby Ci
-              pomóc. Dzwoń lub pisz, będzie Nam bardzo miło przygotować nasze
-              pyszności specjalnie dla Ciebie!
-            </p>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-easing="ease-out"
-            class="right-side"
-          >
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input
-                type="hidden"
-                name="access_key"
-                value="687c766b-3b91-431a-8dff-3402fcbfb648"
-              />
-              <div class="grid-wrapper">
-                <div class="grid-item">
-                  <label for="text-input">imie i nazwisko</label> <br />
-                  <input
-                    required
-                    type="text"
-                    name="text-input"
-                    class="text-input input"
-                    id="text-input"
-                  />
-                </div>
-                <div class="grid-item">
-                  <label for="tel-input">numer telefonu</label> <br />
-                  <input
-                    required
-                    type="tel"
-                    name="tel-input"
-                    class="tel-input input"
-                    id="tel-input input"
-                    placeholder="000 000 000"
-                  />
-                </div>
-                <div class="grid-item">
-                  <label for="email-input">adres email</label> <br />
-                  <input
-                    required
-                    type="email"
-                    name="email-input"
-                    class="email-input input"
-                    id="email-input input"
-                  />
-                </div>
-                <div class="grid-item">
-                  <label for="date-input">data wydarzenia</label> <br />
-                  <input
-                    required
-                    type="date"
-                    name="date-input"
-                    class="date-input input"
-                    id="date-input input"
-                  />
-                </div>
-                <div class="grid-item">
-                  <label for="text-input">liczba gości</label> <br />
-                  <input
-                    required
-                    type="number"
-                    name="text-input"
-                    class="text-input input"
-                    id="text-input input"
-                    placeholder="0"
-                  />
-                </div>
-                <div class="grid-item">
-                  <label for="select-input1">okoliczność</label> <br />
-                  <select name="select-input1" id="select-input1">
-                    <option value="urodziny">urodziny</option>
-                    <option value="służbowy lunch">służbowy lunch</option>
-                    <option value="spotkanie ze znajomymi">
-                      spotkanie ze znajomymi
-                    </option>
-                    <option value="kinder party">kinder party</option>
-                    <option value="inna">inna</option>
-                  </select>
-                </div>
-                <div class="grid-item">
-                  <label for="select-input2">charakter spotkania</label> <br />
-                  <select name="select-input2" id="select-input2">
-                    <option value="garden party">garden party</option>
-                    <option value="kolacja przy stole">
-                      kolacja przy stole
-                    </option>
-                    <option value="piknik">piknik</option>
-                    <option value="spotkanie służbowe">
-                      spotkanie służbowe
-                    </option>
-                    <option value="inny">inny</option>
-                  </select>
-                </div>
-                <div class="grid-item">
-                  <label for="text-input">miejscowość</label> <br />
-                  <input
-                    required
-                    type="text"
-                    name="text-input"
-                    class="text-input input"
-                    id="text-input input"
-                  />
-                </div>
-                <input type="submit" value="Wyślij" />
-              </div>
-            </form>
-          </div>
+        <div class="grid-item">
+          <label for="tel-input">numer telefonu</label>
+          <input
+            required
+            type="tel"
+            name="tel-input"
+            class="tel-input input"
+            id="tel-input input"
+            placeholder="000 000 000"
+          />
         </div>
-      </section>
-      <!-- <section id="section6">
-        <h2>Nasze realizacje</h2>
-        <div class="grid-wrapper">
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
+        <div class="grid-item">
+          <label for="email-input">adres email</label>
+          <input
+            required
+            type="email"
+            name="email-input"
+            class="email-input input"
+            id="email-input input"
+          />
         </div>
-      </section> -->
-    </main>
+        <div class="grid-item">
+          <label for="date-input">data wydarzenia</label>
+          <input
+            required
+            type="date"
+            name="date-input"
+            class="date-input input"
+            id="date-input input"
+          />
+        </div>
+        <div class="grid-item">
+          <label for="text-input">liczba gości</label>
+          <input
+            required
+            type="number"
+            name="text-input"
+            class="text-input input"
+            id="text-input input"
+            placeholder="0"
+          />
+        </div>
+        <div class="grid-item">
+          <label for="select-input1">okoliczność</label>
+          <select name="select-input1" id="select-input1">
+            <option value="urodziny">urodziny</option>
+            <option value="służbowy lunch">służbowy lunch</option>
+            <option value="spotkanie ze znajomymi">
+              spotkanie ze znajomymi
+            </option>
+            <option value="kinder party">kinder party</option>
+            <option value="inna">inna</option>
+          </select>
+        </div>
+        <div class="grid-item">
+          <label for="select-input2">charakter spotkania</label>
+          <select name="select-input2" id="select-input2">
+            <option value="garden party">garden party</option>
+            <option value="kolacja przy stole">kolacja przy stole</option>
+            <option value="piknik">piknik</option>
+            <option value="spotkanie służbowe">spotkanie służbowe</option>
+            <option value="inny">inny</option>
+          </select>
+        </div>
+        <div class="grid-item">
+          <label for="text-input">miejscowość</label>
+          <input
+            required
+            type="text"
+            name="text-input"
+            class="text-input input"
+            id="text-input input"
+          />
+        </div>
+        <button type="submit">Wyślij</button>
+      </form>
+    </section>
+
     <footer>
-      <div class="container">
-        <h2>KONTAKT</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div class="flex-wrapper">
-          <div class="flex-item">
-            <img src="images/mail-icon.svg" alt="mail" id="mail-icon" />
-            <p>zazapartybox@gmail.com</p>
-          </div>
-          <div class="flex-item">
-            <img src="images/phone-icon.svg" alt="phone" />
-            <p>+48 888 999 222</p>
-          </div>
-          <div class="flex-item">
-            <div class="footer-social-container">
-              <img src="images/facebook-icon.svg" alt="facebook" />
-              <img src="images/instagram-icon.svg" alt="instagram" />
-            </div>
-            <p>@partyboxzaza</p>
-          </div>
+      <h2>KONTAKT</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="flex-wrapper">
+        <div class="flex-item">
+          <img src="images/mail-icon.svg" alt="mail" id="mail-icon" />
+          <p>zazapartybox@gmail.com</p>
         </div>
-        <p>Lorem ipsum dolor sit.</p>
+        <div class="flex-item">
+          <img src="images/phone-icon.svg" alt="phone" />
+          <p>+48 888 999 222</p>
+        </div>
+        <div class="flex-item">
+          <div class="footer-social-container">
+            <img src="images/facebook-icon.svg" alt="facebook" />
+            <img src="images/instagram-icon.svg" alt="instagram" />
+          </div>
+          <p>@partyboxzaza</p>
+        </div>
       </div>
     </footer>
 
-    <script src="app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="app.js" defer></script>
   </body>
 </html>

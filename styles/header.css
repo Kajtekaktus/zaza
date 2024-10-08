@@ -1,0 +1,33 @@
+/*HEADER*/
+
+header {
+  height: 512px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > #social-icons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+header > #social-icons > a {
+  width: 50px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+header > #social-icons > a:hover {
+  transform: scale(1.2);
+}
+
+header > #logo {
+  max-width: 350px;
+}

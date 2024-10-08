@@ -1,0 +1,96 @@
+/*RESPONSIVE*/
+
+/* @media only screen and (width <= 900px) { */
+@media only screen and (max-width: 1080px) {
+  #for-companies > div {
+    flex-direction: column;
+  }
+
+  #for-companies .left-side,
+  #for-companies #form > form {
+    width: 100%;
+  }
+
+  #menu__grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #form {
+    flex-direction: column;
+    gap: 16px;
+    width: 100vw;
+  }
+
+  #form__description {
+    width: 100%;
+  }
+
+  #form > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #form > form > .grid-item {
+    width: 100%;
+  }
+
+  .bg {
+    background-image: url("images/bg-phone.jpg");
+    background-size: contain;
+    background-attachment: unset;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
+
+  footer > .flex-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header > #logo {
+    max-width: 200px;
+  }
+
+  #for-companies > div > img {
+    width: 300px !important;
+  }
+
+  #menu__grid > .card {
+    width: 300px;
+  }
+}
+
+/* @media only screen and (width <= 460px) { */
+@media only screen and (max-width: 440px) {
+  h1,
+  h2 {
+    font-size: 3rem;
+    font-family: "Chloe";
+  }
+  #menu__grid > .card > img {
+    width: 100%;
+  }
+  #menu > .container {
+    background-color: transparent;
+  }
+  #menu > .container > h2,
+  #menu > .container > p {
+    background-color: var(--bg-primary-opacity);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  footer > .container > .flex-wrapper > .flex-item {
+    padding: 0;
+    text-wrap: wrap;
+    width: 100%;
+    aspect-ratio: 2/1;
+    padding: 20px 0;
+  }
+}
